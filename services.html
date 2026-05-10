@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services — Ardenpay</title>
+  <meta name="description" content="On-ramp, off-ramp, pay-in and pay-out services from Ardenpay — institutional-grade settlement for high-net-worth individuals and corporate clients.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..600,30..100&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .svc-block {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 80px;
+      padding: 80px 0;
+      border-top: 1px solid var(--rule);
+      align-items: start;
+    }
+    @media (max-width: 880px) {
+      .svc-block { grid-template-columns: 1fr; gap: 32px; padding: 56px 0; }
+    }
+    .svc-tag {
+      font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em;
+      color: var(--gold); text-transform: uppercase; margin-bottom: 18px;
+    }
+    .svc-block h2 {
+      font-size: clamp(34px, 4vw, 52px);
+      max-width: 12ch;
+      line-height: 1.05;
+    }
+    .svc-block .desc { font-size: 17px; line-height: 1.6; max-width: 56ch; margin-top: 22px; }
+
+    .svc-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 24px;
+    }
+    .svc-table tr { border-bottom: 1px solid var(--rule-soft); }
+    .svc-table th, .svc-table td {
+      text-align: left; padding: 16px 0; vertical-align: top;
+    }
+    .svc-table th {
+      font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em;
+      color: var(--ink-soft); text-transform: uppercase; font-weight: 500;
+      width: 40%;
+    }
+    .svc-table td { color: var(--ink); font-size: 15px; }
+    .svc-table .accent {
+      color: var(--gold);
+      font-family: var(--mono); font-size: 12px;
+      letter-spacing: 0.1em;
+    }
+
+    .currencies {
+      display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px;
+    }
+    .currencies span {
+      font-family: var(--mono); font-size: 11px; padding: 5px 10px;
+      border: 1px solid var(--rule); color: var(--ink);
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="nav-logo" href="/"><img src="assets/logo.svg" alt="Ardenpay"></a>
+    <nav><ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="services" class="active">Services</a></li>
+      <li><a href="compliance">Compliance</a></li>
+      <li><a href="about">About</a></li>
+    
+        <li class="mobile-only"><a href="contact" class="mobile-cta">Contact us →</a></li>
+      </ul></nav>
+    <a href="contact" class="nav-cta">Contact us →</a>
+    <button class="nav-toggle" aria-label="Menu">
+      <svg class="icon-open" width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M3 6h16M3 11h16M3 16h16" stroke="#0B2A4A" stroke-width="1.4"/></svg>
+      <svg class="icon-close" width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M5 5l12 12M17 5L5 17" stroke="#0B2A4A" stroke-width="1.4"/></svg>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="crumb"><a href="/">Home</a> &nbsp;/&nbsp; Services</div>
+    <h1>Settlement services for clients who treat capital movement as a serious business.</h1>
+    <p>Four core services, delivered with consistent execution standards across every engagement. Each is supported by named relationship management, transparent pricing, and the documentation your auditors will ask for.</p>
+  </div>
+</section>
+
+<!-- ON-RAMP -->
+<section id="onramp" class="container">
+  <div class="svc-block" style="border-top: none;">
+    <div>
+      <div class="svc-tag">Service 01</div>
+      <h2>On-ramp.</h2>
+      <p class="desc">Convert fiat held at your bank into stablecoins or major digital assets, settled directly to a wallet you control. Compliance review is conducted before execution, so the settlement itself is uneventful — which is the way it should be.</p>
+    </div>
+    <div>
+      <table class="svc-table">
+        <tr>
+          <th>Funding currencies</th>
+          <td>
+            USD · EUR · GBP · CHF · HKD · SGD · CAD · AUD · AED · JPY
+            <div class="currencies">
+              <span>SWIFT</span><span>SEPA</span><span>CHAPS</span><span>FPS</span><span>EFT</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th>Delivery instruments</th>
+          <td>USDT, USDC, BTC, ETH, and other top-tier digital assets on request.</td>
+        </tr>
+        <tr>
+          <th>Settlement window</th>
+          <td>Same business day for receipts confirmed before defined cut-offs; otherwise next business day.</td>
+        </tr>
+        <tr>
+          <th>Pricing</th>
+          <td><span class="accent">Quote-driven</span> — indicative spread provided before commitment, all-in cost confirmed in writing prior to execution.</td>
+        </tr>
+        <tr>
+          <th>Typical use</th>
+          <td>Treasury allocation to digital assets, OTC purchases, settlement of cross-border crypto-denominated obligations.</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- OFF-RAMP -->
+<div style="background: var(--ivory);"><section id="offramp" class="container">
+  <div class="svc-block">
+    <div>
+      <div class="svc-tag">Service 02</div>
+      <h2>Off-ramp.</h2>
+      <p class="desc">Liquidate digital assets to fiat with payouts to your bank account in supported jurisdictions. Clear FX disclosure, transparent fees, and full settlement documentation issued on the same day.</p>
+    </div>
+    <div>
+      <table class="svc-table">
+        <tr>
+          <th>Accepted assets</th>
+          <td>USDT, USDC, BTC, ETH; additional assets considered subject to liquidity review.</td>
+        </tr>
+        <tr>
+          <th>Payout currencies</th>
+          <td>
+            USD · EUR · GBP · CHF · HKD · SGD · CAD · AUD · AED · JPY
+            <div class="currencies">
+              <span>SWIFT</span><span>SEPA</span><span>CHAPS</span><span>FPS</span><span>Local rails</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th>Settlement window</th>
+          <td>Same business day under defined cut-offs; T+1 for cross-jurisdictional or higher-value transactions requiring secondary review.</td>
+        </tr>
+        <tr>
+          <th>Documentation</th>
+          <td>Trade confirmation, fee statement, on-chain reference, and jurisdiction-appropriate compliance documentation issued on settlement.</td>
+        </tr>
+        <tr>
+          <th>Typical use</th>
+          <td>Realisation of digital asset gains to fiat, treasury rebalancing, settlement of operating expenses funded from digital balances.</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section></div>
+
+<!-- PAY-IN -->
+<section id="payin" class="container">
+  <div class="svc-block">
+    <div>
+      <div class="svc-tag">Service 03</div>
+      <h2>Pay-in.</h2>
+      <p class="desc">Receive payments from your customers and counterparties in fiat or stablecoin, with proceeds consolidated and converted into your nominated settlement currency. A practical alternative to building cross-border collection in-house.</p>
+    </div>
+    <div>
+      <table class="svc-table">
+        <tr>
+          <th>Collection methods</th>
+          <td>Wire receipts in major fiat currencies; on-chain stablecoin receipts via dedicated addresses.</td>
+        </tr>
+        <tr>
+          <th>Account structure</th>
+          <td>Dedicated virtual accounts and counterparty references — keeping your reconciliation clean.</td>
+        </tr>
+        <tr>
+          <th>Reporting</th>
+          <td>Daily statements, configurable export formats, and reconciliation files compatible with common ERP systems.</td>
+        </tr>
+        <tr>
+          <th>Controls</th>
+          <td>Counterparty screening at receipt, source-of-funds enquiry where indicated, configurable whitelists.</td>
+        </tr>
+        <tr>
+          <th>Typical use</th>
+          <td>Receiving payments from international clients, suppliers, or platform users; consolidating multi-jurisdiction collection into a single ledger.</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- PAY-OUT -->
+<div style="background: var(--ivory);"><section id="payout" class="container">
+  <div class="svc-block">
+    <div>
+      <div class="svc-tag">Service 04</div>
+      <h2>Pay-out.</h2>
+      <p class="desc">Disburse to suppliers, partners, payroll, and beneficiaries across jurisdictions — singly or in scheduled batches, in fiat or stablecoin. Approval workflows and dual-control release are built in by default.</p>
+    </div>
+    <div>
+      <table class="svc-table">
+        <tr>
+          <th>Payment rails</th>
+          <td>SWIFT, SEPA, CHAPS, FPS, local rails in supported jurisdictions; on-chain transfers in major stablecoins.</td>
+        </tr>
+        <tr>
+          <th>Initiation</th>
+          <td>Single payments via portal; bulk file upload (CSV / XML) for batched releases; API-based initiation for established clients.</td>
+        </tr>
+        <tr>
+          <th>Approval</th>
+          <td>Configurable maker–checker controls. Threshold-based dual approval as standard for higher-value releases.</td>
+        </tr>
+        <tr>
+          <th>Beneficiary controls</th>
+          <td>Sanctions and PEP screening at every release. Beneficiary whitelisting available for repeat counterparties.</td>
+        </tr>
+        <tr>
+          <th>Typical use</th>
+          <td>Cross-border vendor settlement, contractor and payroll disbursement, partner revenue share, scheduled treasury distributions.</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section></div>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container" style="text-align: center; max-width: 720px;">
+    <p class="eyebrow"><span class="bullet"></span>Next step</p>
+    <h2 style="margin: 18px auto 24px;">Discuss your specific use case with our team.</h2>
+    <p style="margin: 0 auto 36px;">Every engagement is structured around the actual flow you need to execute. Tell us what you are trying to achieve, and we will tell you whether we are the right partner for it.</p>
+    <a class="btn" href="contact">Contact us
+      <svg class="arrow" viewBox="0 0 16 16" fill="none"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.4"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/logo-light.svg" alt="Ardenpay">
+        <p>Ardenpay is the trading name of Ardenovirex Inc., a Canadian-registered money services business providing institutional on-ramp, off-ramp, pay-in and pay-out services.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services#onramp">On-ramp</a></li>
+          <li><a href="services#offramp">Off-ramp</a></li>
+          <li><a href="services#payin">Pay-in</a></li>
+          <li><a href="services#payout">Pay-out</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about">About</a></li>
+          <li><a href="compliance">Compliance</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="legal/terms">Terms of service</a></li>
+          <li><a href="legal/privacy">Privacy policy</a></li>
+          <li><a href="legal/aml">AML / CFT policy</a></li>
+          <li><a href="legal/cookies">Cookie notice</a></li>
+          <li><a href="legal/risk">Risk disclosure</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <div>
+        <span class="compliance-badge"><span class="dot"></span>FINTRAC MSB · Reg. C100001744</span>
+        <p>Ardenovirex Inc. is registered with the Financial Transactions and Reports Analysis Centre of Canada (FINTRAC) as a Money Services Business, including dealing in virtual currency, under registration number <strong style="color: rgba(244,239,230,0.78);">C100001744</strong>. Registration as an MSB does not constitute an endorsement by FINTRAC.</p>
+        <p style="margin-top: 12px;">Services described on this website are not directed to, nor available to, residents of jurisdictions where such services would be unlawful. Digital assets carry material risk, including the risk of total loss.</p>
+      </div>
+      <div>
+        <p><strong style="color: rgba(244,239,230,0.78);">Ardenovirex Inc.</strong><br>Registered office in Canada<br>contact@ardenpay.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ardenovirex Inc. All rights reserved.</span>
+      <span>Built with care.</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/nav.js"></script>
+</body>
+</html>

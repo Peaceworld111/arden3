@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compliance — Ardenpay</title>
+  <meta name="description" content="Ardenpay's compliance, AML/CFT, sanctions, and operational controls. Operated by Ardenovirex Inc., a FINTRAC-registered MSB (C100001744).">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..600,30..100&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .license-card {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 56px;
+      padding: 56px;
+      background: var(--ivory);
+      border: 1px solid var(--rule);
+      position: relative;
+    }
+    @media (max-width: 880px) {
+      .license-card { grid-template-columns: 1fr; padding: 36px; gap: 28px; }
+    }
+    .license-card::before {
+      content: ""; position: absolute;
+      top: -1px; right: -1px; width: 64px; height: 64px;
+      border-top: 2px solid var(--gold);
+      border-right: 2px solid var(--gold);
+    }
+    .license-seal {
+      width: 100%; max-width: 220px;
+      aspect-ratio: 1; border: 1px solid var(--ink);
+      display: grid; place-items: center; text-align: center;
+      padding: 24px; position: relative;
+    }
+    .license-seal::before, .license-seal::after {
+      content: ""; position: absolute;
+      width: 14px; height: 14px;
+      border: 1px solid var(--ink);
+    }
+    .license-seal::before { top: -6px; left: -6px; transform: rotate(45deg); background: var(--ivory); }
+    .license-seal::after  { bottom: -6px; right: -6px; transform: rotate(45deg); background: var(--ivory); }
+    .license-seal .top {
+      font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em;
+      color: var(--ink-soft); text-transform: uppercase;
+    }
+    .license-seal .num {
+      font-family: var(--serif); font-size: 32px; color: var(--ink);
+      font-weight: 400; margin: 12px 0; letter-spacing: -0.02em;
+    }
+    .license-seal .auth {
+      font-family: var(--mono); font-size: 10px; letter-spacing: 0.16em;
+      color: var(--gold); text-transform: uppercase;
+    }
+    .license-card h3 { font-size: 28px; margin-bottom: 16px; }
+    .license-card .meta {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 16px 32px; margin-top: 28px; padding-top: 24px;
+      border-top: 1px solid var(--rule);
+    }
+    .license-card .meta .label {
+      font-family: var(--mono); font-size: 10px; letter-spacing: 0.16em;
+      color: var(--ink-soft); text-transform: uppercase;
+    }
+    .license-card .meta .val {
+      font-size: 15px; color: var(--ink); margin-top: 4px;
+    }
+
+    .programme-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 0;
+      border-top: 1px solid var(--rule); border-left: 1px solid var(--rule);
+      margin-top: 56px;
+    }
+    @media (max-width: 880px) { .programme-grid { grid-template-columns: 1fr; } }
+    .programme {
+      padding: 40px 36px;
+      border-right: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+    }
+    .programme h3 {
+      font-size: 22px; font-family: var(--serif); font-weight: 400;
+      margin-bottom: 14px;
+    }
+    .programme h3 .num {
+      font-family: var(--mono); font-size: 12px; color: var(--gold);
+      letter-spacing: 0.14em; margin-right: 12px;
+    }
+    .programme p { font-size: 14px; line-height: 1.65; }
+
+    .restrictions {
+      background: var(--ink); color: var(--ivory);
+      padding: 56px;
+      margin-top: 80px;
+      position: relative;
+    }
+    @media (max-width: 720px) { .restrictions { padding: 36px 28px; } }
+    .restrictions h3 {
+      color: var(--ivory); font-size: 28px;
+      font-family: var(--serif); font-weight: 400;
+      margin-bottom: 18px;
+    }
+    .restrictions p { color: rgba(244,239,230,0.7); max-width: 70ch; }
+    .restrictions ul {
+      list-style: none; margin-top: 28px;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px 32px;
+    }
+    @media (max-width: 720px) { .restrictions ul { grid-template-columns: 1fr; } }
+    .restrictions li {
+      font-family: var(--mono); font-size: 12px; color: rgba(244,239,230,0.85);
+      padding: 8px 0; border-bottom: 1px solid rgba(244,239,230,0.1);
+      letter-spacing: 0.06em;
+    }
+    .restrictions li::before {
+      content: "—"; color: var(--gold-soft); margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="nav-logo" href="/"><img src="assets/logo.svg" alt="Ardenpay"></a>
+    <nav><ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="services">Services</a></li>
+      <li><a href="compliance" class="active">Compliance</a></li>
+      <li><a href="about">About</a></li>
+    
+        <li class="mobile-only"><a href="contact" class="mobile-cta">Contact us →</a></li>
+      </ul></nav>
+    <a href="contact" class="nav-cta">Contact us →</a>
+    <button class="nav-toggle" aria-label="Menu">
+      <svg class="icon-open" width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M3 6h16M3 11h16M3 16h16" stroke="#0B2A4A" stroke-width="1.4"/></svg>
+      <svg class="icon-close" width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M5 5l12 12M17 5L5 17" stroke="#0B2A4A" stroke-width="1.4"/></svg>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="crumb"><a href="/">Home</a> &nbsp;/&nbsp; Compliance</div>
+    <h1>Operating a regulated payment business is a discipline, not a slogan.</h1>
+    <p>This page summarises Ardenpay's regulatory status, AML/CFT programme, sanctions controls, and operational restrictions. Detailed policy documents are available to clients during onboarding.</p>
+  </div>
+</section>
+
+<!-- LICENSE -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow"><span class="bullet"></span>Regulatory status</p>
+      <h2>Registered with FINTRAC as a Canadian Money Services Business.</h2>
+    </div>
+
+    <div class="license-card">
+      <div class="license-seal">
+        <div class="top">Registration</div>
+        <div class="num">C100001744</div>
+        <div class="auth">FINTRAC · Canada</div>
+      </div>
+      <div>
+        <h3>Ardenovirex Inc.</h3>
+        <p>Ardenovirex Inc., trading as <strong>Ardenpay</strong>, is registered with the Financial Transactions and Reports Analysis Centre of Canada (FINTRAC) as a Money Services Business. The registration includes authorisation to deal in virtual currency.</p>
+
+        <div class="meta">
+          <div>
+            <div class="label">Legal entity</div>
+            <div class="val">Ardenovirex Inc.</div>
+          </div>
+          <div>
+            <div class="label">Trading name</div>
+            <div class="val">Ardenpay</div>
+          </div>
+          <div>
+            <div class="label">Regulator</div>
+            <div class="val">FINTRAC (Canada)</div>
+          </div>
+          <div>
+            <div class="label">Registration number</div>
+            <div class="val">C100001744</div>
+          </div>
+          <div>
+            <div class="label">Authorised activities</div>
+            <div class="val">Foreign exchange dealing; remitting or transmitting funds; dealing in virtual currency.</div>
+          </div>
+          <div>
+            <div class="label">Verification</div>
+            <div class="val">FINTRAC's MSB registry is publicly searchable on the FINTRAC website.</div>
+          </div>
+        </div>
+
+        <p style="margin-top: 28px; font-size: 13px; color: var(--ink-soft); border-top: 1px solid var(--rule); padding-top: 20px;">Registration as an MSB does not constitute an endorsement of the registrant by FINTRAC, nor a guarantee of the integrity, financial standing, or business practices of the registrant.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMMES -->
+<section class="section section--ivory">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow"><span class="bullet"></span>Compliance programme</p>
+      <div>
+        <h2>The controls behind every transaction.</h2>
+        <p class="lede" style="margin-top: 22px;">Our programme is designed around FINTRAC requirements and reflects FATF recommendations applicable to virtual asset service providers. It is reviewed periodically and adjusted to reflect changes in regulation, typology, and our own client base.</p>
+      </div>
+    </div>
+
+    <div class="programme-grid">
+      <div class="programme">
+        <h3><span class="num">01</span>Customer due diligence</h3>
+        <p>Identification and verification of every client, with documentation appropriate to risk. Beneficial ownership identified for corporate entities. Source of funds and source of wealth documented for transactions above defined thresholds. Enhanced due diligence applied to higher-risk relationships.</p>
+      </div>
+
+      <div class="programme">
+        <h3><span class="num">02</span>Sanctions & PEP screening</h3>
+        <p>Continuous screening of clients, beneficial owners, counterparties, and beneficiaries against major sanctions lists (including OFAC, UN, EU, UK, OSFI) and politically exposed persons databases. Screening conducted at onboarding, on an ongoing basis, and prior to each release.</p>
+      </div>
+
+      <div class="programme">
+        <h3><span class="num">03</span>Transaction monitoring</h3>
+        <p>Risk-based transaction monitoring covering both fiat and on-chain activity. Patterns inconsistent with the established profile of the client are reviewed by the compliance team. Suspicious transactions are reported in accordance with applicable law.</p>
+      </div>
+
+      <div class="programme">
+        <h3><span class="num">04</span>Travel rule</h3>
+        <p>Implementation of the FATF travel rule for virtual asset transfers, including the collection and transmission of originator and beneficiary information for qualifying transactions, in accordance with applicable Canadian regulation.</p>
+      </div>
+
+      <div class="programme">
+        <h3><span class="num">05</span>Recordkeeping</h3>
+        <p>Records relating to client identification, transactions, compliance reviews, and reporting are retained for the periods required by applicable law and made available to authorities on lawful request.</p>
+      </div>
+
+      <div class="programme">
+        <h3><span class="num">06</span>Training & governance</h3>
+        <p>A designated Chief Compliance Officer oversees the programme. Compliance training is delivered to all relevant personnel on appointment and refreshed periodically. The programme is subject to independent review.</p>
+      </div>
+    </div>
+
+    <!-- RESTRICTIONS -->
+    <div class="restrictions">
+      <p class="eyebrow" style="color: var(--gold-soft);"><span class="bullet"></span>Restrictions</p>
+      <h3 style="margin-top: 14px;">We do not serve, accept, or transact with the following.</h3>
+      <p>The following list is illustrative and is supplemented by jurisdictional and counterparty restrictions communicated during onboarding.</p>
+      <ul>
+        <li>Sanctioned jurisdictions (per applicable lists)</li>
+        <li>Sanctioned individuals or entities</li>
+        <li>Anonymous or unverified counterparties</li>
+        <li>Funds derived from unlawful conduct</li>
+        <li>Privacy-coin denominated transactions</li>
+        <li>Mixers, tumblers, and similar services</li>
+        <li>Darknet-market related flows</li>
+        <li>Unlicensed gambling operators</li>
+        <li>Adult content platform settlement</li>
+        <li>Unregistered securities offerings</li>
+        <li>Ponzi or pyramid scheme proceeds</li>
+        <li>Activity inconsistent with stated purpose</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- DOCUMENTS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow"><span class="bullet"></span>Policy documents</p>
+      <div>
+        <h2>Policies are public where they should be — and provided in full to clients during onboarding.</h2>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid var(--rule); border-left: 1px solid var(--rule);">
+      <a href="legal/terms" class="programme" style="text-decoration: none;">
+        <h3 style="display: flex; justify-content: space-between; align-items: center;">Terms of service <span style="color: var(--gold); font-family: var(--mono); font-size: 18px;">→</span></h3>
+        <p>The contractual basis on which we provide services.</p>
+      </a>
+      <a href="legal/privacy" class="programme" style="text-decoration: none;">
+        <h3 style="display: flex; justify-content: space-between; align-items: center;">Privacy policy <span style="color: var(--gold); font-family: var(--mono); font-size: 18px;">→</span></h3>
+        <p>How we collect, use, and protect personal information.</p>
+      </a>
+      <a href="legal/aml" class="programme" style="text-decoration: none;">
+        <h3 style="display: flex; justify-content: space-between; align-items: center;">AML / CFT policy <span style="color: var(--gold); font-family: var(--mono); font-size: 18px;">→</span></h3>
+        <p>Summary of our anti-money laundering and counter-terrorism financing programme.</p>
+      </a>
+      <a href="legal/risk" class="programme" style="text-decoration: none;">
+        <h3 style="display: flex; justify-content: space-between; align-items: center;">Risk disclosure <span style="color: var(--gold); font-family: var(--mono); font-size: 18px;">→</span></h3>
+        <p>The risks associated with digital asset transactions.</p>
+      </a>
+      <a href="legal/cookies" class="programme" style="text-decoration: none;">
+        <h3 style="display: flex; justify-content: space-between; align-items: center;">Cookie notice <span style="color: var(--gold); font-family: var(--mono); font-size: 18px;">→</span></h3>
+        <p>How we use cookies and similar technologies on this site.</p>
+      </a>
+      <a href="contact" class="programme" style="text-decoration: none; background: var(--ivory);">
+        <h3 style="display: flex; justify-content: space-between; align-items: center;">Compliance enquiries <span style="color: var(--gold); font-family: var(--mono); font-size: 18px;">→</span></h3>
+        <p>Contact our compliance team directly for regulatory matters.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/logo-light.svg" alt="Ardenpay">
+        <p>Ardenpay is the trading name of Ardenovirex Inc., a Canadian-registered money services business providing institutional on-ramp, off-ramp, pay-in and pay-out services.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services#onramp">On-ramp</a></li>
+          <li><a href="services#offramp">Off-ramp</a></li>
+          <li><a href="services#payin">Pay-in</a></li>
+          <li><a href="services#payout">Pay-out</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about">About</a></li>
+          <li><a href="compliance">Compliance</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="legal/terms">Terms of service</a></li>
+          <li><a href="legal/privacy">Privacy policy</a></li>
+          <li><a href="legal/aml">AML / CFT policy</a></li>
+          <li><a href="legal/cookies">Cookie notice</a></li>
+          <li><a href="legal/risk">Risk disclosure</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <div>
+        <span class="compliance-badge"><span class="dot"></span>FINTRAC MSB · Reg. C100001744</span>
+        <p>Ardenovirex Inc. is registered with FINTRAC as a Money Services Business, including dealing in virtual currency, under registration number <strong style="color: rgba(244,239,230,0.78);">C100001744</strong>. Registration as an MSB does not constitute an endorsement by FINTRAC.</p>
+        <p style="margin-top: 12px;">Services described on this website are not directed to, nor available to, residents of jurisdictions where such services would be unlawful. Digital assets carry material risk, including the risk of total loss.</p>
+      </div>
+      <div>
+        <p><strong style="color: rgba(244,239,230,0.78);">Ardenovirex Inc.</strong><br>Registered office in Canada<br>contact@ardenpay.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ardenovirex Inc. All rights reserved.</span>
+      <span>Built with care.</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/nav.js"></script>
+</body>
+</html>

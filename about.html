@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Ardenpay</title>
+  <meta name="description" content="About Ardenpay and Ardenovirex Inc. — an institutional crypto payments business serving high-net-worth and corporate clients globally.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..600,30..100&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px;
+      align-items: start;
+    }
+    @media (max-width: 880px) { .about-grid { grid-template-columns: 1fr; gap: 40px; } }
+    .about-grid p { font-size: 17px; line-height: 1.7; color: var(--ink); }
+    .about-grid p + p { margin-top: 18px; }
+
+    .principles {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 0; margin-top: 80px;
+      border-top: 1px solid var(--rule);
+    }
+    @media (max-width: 880px) { .principles { grid-template-columns: 1fr; } }
+    .principle {
+      padding: 40px 32px;
+      border-right: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+    }
+    .principle:last-child { border-right: 0; }
+    .principle .num {
+      font-family: var(--mono); font-size: 11px; letter-spacing: 0.2em;
+      color: var(--gold);
+    }
+    .principle h3 {
+      font-family: var(--serif); font-size: 26px; font-weight: 400;
+      margin-top: 14px; margin-bottom: 14px;
+    }
+    .principle p { font-size: 14px; line-height: 1.65; }
+
+    .corp-table {
+      width: 100%; border-collapse: collapse; margin-top: 24px;
+    }
+    .corp-table tr { border-bottom: 1px solid var(--rule-soft); }
+    .corp-table th, .corp-table td {
+      text-align: left; padding: 16px 0; vertical-align: top;
+    }
+    .corp-table th {
+      font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em;
+      color: var(--ink-soft); text-transform: uppercase;
+      font-weight: 500; width: 35%;
+    }
+    .corp-table td { color: var(--ink); font-size: 15px; }
+
+    .quote {
+      padding: 80px 0; text-align: center;
+    }
+    .quote q {
+      display: block;
+      font-family: var(--serif); font-size: clamp(28px, 3.4vw, 40px);
+      font-weight: 300; font-style: italic;
+      color: var(--ink); line-height: 1.3;
+      max-width: 22ch; margin: 0 auto 24px;
+      letter-spacing: -0.01em;
+      quotes: "“" "”";
+    }
+    .quote q::before { content: open-quote; color: var(--gold); }
+    .quote q::after  { content: close-quote; color: var(--gold); }
+    .quote .src {
+      font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em;
+      color: var(--ink-soft); text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="nav-logo" href="/"><img src="assets/logo.svg" alt="Ardenpay"></a>
+    <nav><ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="services">Services</a></li>
+      <li><a href="compliance">Compliance</a></li>
+      <li><a href="about" class="active">About</a></li>
+    
+        <li class="mobile-only"><a href="contact" class="mobile-cta">Contact us →</a></li>
+      </ul></nav>
+    <a href="contact" class="nav-cta">Contact us →</a>
+    <button class="nav-toggle" aria-label="Menu">
+      <svg class="icon-open" width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M3 6h16M3 11h16M3 16h16" stroke="#0B2A4A" stroke-width="1.4"/></svg>
+      <svg class="icon-close" width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M5 5l12 12M17 5L5 17" stroke="#0B2A4A" stroke-width="1.4"/></svg>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="crumb"><a href="/">Home</a> &nbsp;/&nbsp; About</div>
+    <h1>A payments business, run with the discipline of a bank — and the speed of a market.</h1>
+    <p>Ardenpay is built for clients who refuse to choose between regulatory rigour and operational competence.</p>
+  </div>
+</section>
+
+<!-- WHO WE ARE -->
+<section class="section">
+  <div class="container about-grid">
+    <div>
+      <p class="eyebrow"><span class="bullet"></span>Who we are</p>
+      <h2 style="margin-top: 18px;">Built for the long term.</h2>
+    </div>
+    <div>
+      <p>Ardenpay is the trading name of <strong>Ardenovirex Inc.</strong>, a Canadian-registered money services business specialising in the movement of value between fiat and digital assets. We were founded by operators with backgrounds in institutional banking, payments infrastructure, and digital asset markets — and we built the company we wanted to use ourselves.</p>
+      <p>Our remit is narrow on purpose. We do four things — on-ramp, off-ramp, pay-in, and pay-out — and we do them for clients whose transactions warrant a relationship rather than a sign-up form. That focus is what allows us to keep our compliance posture rigorous, our service consistent, and our pricing honest.</p>
+      <p>We operate under the Canadian regulatory regime, are registered with FINTRAC as a Money Services Business (registration <strong>C100001744</strong>), and serve clients globally from offices in our principal jurisdictions of operation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRINCIPLES -->
+<section class="section section--ivory">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow"><span class="bullet"></span>How we operate</p>
+      <h2>Three principles that shape every engagement.</h2>
+    </div>
+
+    <div class="principles">
+      <div class="principle">
+        <span class="num">01</span>
+        <h3>Discretion is a feature.</h3>
+        <p>Our clients value the ability to move significant value without becoming a marketing case study. We do not publish client logos, do not seek media coverage of individual transactions, and treat the existence of a relationship as itself confidential.</p>
+      </div>
+      <div class="principle">
+        <span class="num">02</span>
+        <h3>Compliance is the product.</h3>
+        <p>The reason a client engages a regulated payment business is the assurance that the institution on the other side has done its work. That assurance has to be earned in every transaction, not asserted on a homepage.</p>
+      </div>
+      <div class="principle">
+        <span class="num">03</span>
+        <h3>Pricing is transparent.</h3>
+        <p>You see the all-in cost before you commit. No spreads buried in execution, no surprise fees on settlement, no per-transaction renegotiation. The quote we give you is the quote we honour.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORPORATE INFORMATION -->
+<section class="section">
+  <div class="container about-grid">
+    <div>
+      <p class="eyebrow"><span class="bullet"></span>Corporate information</p>
+      <h2 style="margin-top: 18px;">Ardenovirex Inc.</h2>
+      <p style="margin-top: 22px; font-size: 16px;">The legal entity behind the Ardenpay brand. The information below is published for clients, counterparties, and partners conducting due diligence.</p>
+    </div>
+    <div>
+      <table class="corp-table">
+        <tr>
+          <th>Legal name</th>
+          <td>Ardenovirex Inc.</td>
+        </tr>
+        <tr>
+          <th>Trading name</th>
+          <td>Ardenpay</td>
+        </tr>
+        <tr>
+          <th>Country of incorporation</th>
+          <td>Canada</td>
+        </tr>
+        <tr>
+          <th>Regulatory registration</th>
+          <td>FINTRAC Money Services Business · C100001744</td>
+        </tr>
+        <tr>
+          <th>Authorised activities</th>
+          <td>Foreign exchange dealing; remitting or transmitting funds; dealing in virtual currency.</td>
+        </tr>
+        <tr>
+          <th>General enquiries</th>
+          <td>contact@ardenpay.com</td>
+        </tr>
+        <tr>
+          <th>Compliance</th>
+          <td>compliance@ardenpay.com</td>
+        </tr>
+        <tr>
+          <th>Media</th>
+          <td>By appointment only.</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="quote section--ivory" style="background: var(--ivory); border-top: 1px solid var(--rule);">
+  <div class="container">
+    <q>The job is not to move money fast. The job is to move it correctly, every time, with a documentation trail anyone can read.</q>
+    <div class="src">— Operating principle, Ardenpay</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container" style="text-align: center; max-width: 720px;">
+    <p class="eyebrow"><span class="bullet"></span>Get in touch</p>
+    <h2 style="margin: 18px auto 24px;">Begin a conversation.</h2>
+    <p style="margin: 0 auto 36px;">Tell us about your use case. We will respond within one business day with the next concrete step.</p>
+    <a class="btn" href="contact">Contact us
+      <svg class="arrow" viewBox="0 0 16 16" fill="none"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.4"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/logo-light.svg" alt="Ardenpay">
+        <p>Ardenpay is the trading name of Ardenovirex Inc., a Canadian-registered money services business providing institutional on-ramp, off-ramp, pay-in and pay-out services.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services#onramp">On-ramp</a></li>
+          <li><a href="services#offramp">Off-ramp</a></li>
+          <li><a href="services#payin">Pay-in</a></li>
+          <li><a href="services#payout">Pay-out</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about">About</a></li>
+          <li><a href="compliance">Compliance</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="legal/terms">Terms of service</a></li>
+          <li><a href="legal/privacy">Privacy policy</a></li>
+          <li><a href="legal/aml">AML / CFT policy</a></li>
+          <li><a href="legal/cookies">Cookie notice</a></li>
+          <li><a href="legal/risk">Risk disclosure</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <div>
+        <span class="compliance-badge"><span class="dot"></span>FINTRAC MSB · Reg. C100001744</span>
+        <p>Ardenovirex Inc. is registered with FINTRAC as a Money Services Business, including dealing in virtual currency, under registration number <strong style="color: rgba(244,239,230,0.78);">C100001744</strong>. Registration as an MSB does not constitute an endorsement by FINTRAC.</p>
+        <p style="margin-top: 12px;">Services described on this website are not directed to, nor available to, residents of jurisdictions where such services would be unlawful. Digital assets carry material risk, including the risk of total loss.</p>
+      </div>
+      <div>
+        <p><strong style="color: rgba(244,239,230,0.78);">Ardenovirex Inc.</strong><br>Registered office in Canada<br>contact@ardenpay.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ardenovirex Inc. All rights reserved.</span>
+      <span>Built with care.</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/nav.js"></script>
+</body>
+</html>
