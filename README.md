@@ -35,12 +35,12 @@ forwards form submissions directly to your inbox. No backend or server required.
 
 ### Step 1 — Create a Formspree account
 1. Go to https://formspree.io and sign up (free tier: 50 submissions/month).
-2. Verify the email address `contact@ardenpay.com` — Formspree will send a
+2. Verify the email address `contact@ardenpay.io` — Formspree will send a
    confirmation link.
 
 ### Step 2 — Create a new form
 1. In the Formspree dashboard, click **New form**.
-2. Set the email destination to: `contact@ardenpay.com`
+2. Set the email destination to: `contact@ardenpay.io`
 3. Name the form e.g. "Ardenpay website enquiries".
 4. Formspree will give you a form endpoint that looks like:
    ```
@@ -63,7 +63,7 @@ part from Step 2). Save the file.
 ### Done
 Test the form by submitting once. The first submission asks Formspree to
 verify ownership; subsequent submissions arrive directly at
-`contact@ardenpay.com`.
+`contact@ardenpay.io`.
 
 Each email contains every field the user filled in (name, email, phone,
 company, role, client type, service of interest, jurisdiction, monthly
@@ -80,7 +80,7 @@ This is a static site. Drop the entire `ardenpay/` folder onto any of:
 - **Amazon S3 + CloudFront** — for production at scale
 - Any traditional web host (just upload via FTP/SFTP)
 
-After deployment, point your domain `ardenpay.com` at the host's nameservers
+After deployment, point your domain `ardenpay.io` at the host's nameservers
 or CNAME record.
 
 ## Things to verify before going live
@@ -91,9 +91,9 @@ or CNAME record.
    Search & replace in all HTML files if it changes.
 
 2. **Email addresses.** Currently shown:
-   - contact@ardenpay.com (general)
-   - compliance@ardenpay.com (compliance / regulatory)
-   - privacy@ardenpay.com (privacy / data requests)
+   - contact@ardenpay.io (general)
+   - compliance@ardenpay.io (compliance / regulatory)
+   - privacy@ardenpay.io (privacy / data requests)
 
    Make sure these mailboxes exist before the site goes live.
 
